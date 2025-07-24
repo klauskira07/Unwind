@@ -47,6 +47,35 @@
                 color: #038CFDFF !important
             }
         
+            /* Bouton WhatsApp Fixe */
+    .whatsapp-float {
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        width: 60px;
+        height: 60px;
+        background-color: #25D366;
+        border-radius: 20%;
+        text-align: center;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        z-index: 1000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s ease;
+    }
+
+    .whatsapp-float:hover {
+        background-color: #128C7E;
+        transform: scale(1.1);
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .whatsapp-float img {
+        width: 30px;
+        height: 30px;
+        filter: brightness(0) invert(1); /* Rend l'icône blanche */
+}
          
 
 </style>
@@ -54,7 +83,6 @@
     </head>
     
     <body >
-    
         <main>
 
             <section class="hero" id="hero">
@@ -81,6 +109,8 @@
 
                 <div class="overlay"></div>
             </section>
+
+            
 
             <nav class="navbar navbar-expand-lg shadow-lg navbar-light" style="
                 background-color: #ffffff;
@@ -507,6 +537,10 @@
         <script src="js/magnific-popup-options.js"></script>
         <script src="js/scrollspy.min.js"></script>
         <script src="js/custom.js"></script>
+
+        <a href="https://wa.link/g8m1mb" class="whatsapp-float" target="_blank" rel="noopener noreferrer">
+            <img src="images/logos/whatsapp.png" alt="Contact WhatsApp">
+        </a>
 
     </body>
 </html>
